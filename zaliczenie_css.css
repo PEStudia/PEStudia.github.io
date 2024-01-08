@@ -1,0 +1,268 @@
+/*Strona internetowa na zaliczenie - Piotr Ernest - Informatyka*/
+
+body{
+    background-color: #7AA6CF;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&display=swap');
+
+/*zmaiany dla ekranow mniejszych niz szerokosc 768px */
+@media only screen and (max-width: 700px){
+
+#main{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+#header{
+    grid-area: 1 / 1 / 2 / 5;
+}
+#article{
+    grid-area: 2 / 2 / 6 / 5; 
+}
+#sidebar{
+    grid-area: 2 / 1 / 6 / 2;
+}
+#footer{
+    grid-area: 6 / 1 / 7 / 5; 
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+}
+.side_photo{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+}
+
+/*zmaiany dla ekranow wiekszych niz szerokosc 768px */
+@media only screen and (min-width: 700px){
+    #main{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;  
+    }
+
+    #header{
+        grid-area: 1 / 2 / 3 / 8; 
+    }
+    #footer{
+        grid-area: 9 / 2 / 10 / 8;
+    }
+    #article{
+        grid-area: 3 / 2 / 9 / 8;
+    }
+    #sidebar{
+        grid-area: 1 / 1 / 10 / 2;
+    }
+
+    .side_photo{
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+
+}
+
+
+
+#header{
+    background-color: rgba(136, 122, 206, 1);
+    background-image: linear-gradient(163deg, rgba(136, 122, 206, 1) 0%, rgba(165, 122, 207, 1) 72%);
+    margin: 20px;
+    border-radius: 50px;
+    border-style: solid;
+    border-width: 10px;
+    border-color: #626ea7;
+    padding: 5px;
+    -webkit-box-shadow: 8px 9px 2px 1px rgba(73, 84, 134, 1);
+    -moz-box-shadow: 8px 9px 2px 1px rgba(73, 84, 134, 1);
+    box-shadow: 8px 9px 2px 1px rgba(73, 84, 134, 1);
+
+    
+
+    max-height: 300px;
+    min-width: 850px;
+    
+}
+#header_title{
+    text-align: left;
+    font-family: 'Cherry Bomb One', cursive;
+    font-size: 30px;
+    font-weight: 1px;
+    margin: 20px;
+
+    min-width: 650px;
+
+}
+
+
+
+#logo{
+    content: url("media/icon.png");
+    float: left;
+    padding: 5px;
+    max-width: 256px;
+}
+
+#logo:hover{
+    content: url("media/icon2.png");
+
+}
+
+#article{
+    background-color: #E08862;
+    margin: 20px;
+    
+    border-radius: 50px;
+    border-style: solid;
+    border-width: 10px;
+    border-color: #dd6d5a;
+    
+    padding: 5px;
+    -webkit-box-shadow: 8px 8px 2px 0px rgba(189, 83, 36, 1);
+    -moz-box-shadow: 8px 8px 2px 0px rgba(189, 83, 36, 1);
+    box-shadow: 8px 8px 2px 0px rgba(189, 83, 36, 1);
+
+    min-width: 1050px;
+
+
+}
+article{
+    position: relative;
+    padding: 20px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Darumadrop+One&display=swap');
+
+article p{
+    padding: 10px;
+    font-family: 'Darumadrop One', cursive;
+    font-size: 20px;
+
+}
+
+article h1{
+    font-size: 30px;
+    text-align: center;
+}
+
+#video{
+    position: relative;
+    max-width: 900px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+
+}
+
+video{
+    width: 100%;
+    height: auto;
+    border-style: solid;
+    border-width: 10px;
+    border-color: #c95a47;
+    border-radius: 50px;
+
+}
+
+#sidebar{
+ 
+    
+    background-color: #62E177;
+    padding: 20px;
+
+    border-style: solid;
+    border-width: 10px;
+    border-color: #53d364;
+    border-radius: 50px;
+
+    font-family: 'Cherry Bomb One', cursive;
+    text-align: center;
+    font-size: 30px;
+
+    max-width: 500px;
+
+    -webkit-box-shadow: 8px 8px 2px 0px rgba(80, 184, 71, 1);
+    -moz-box-shadow: 8px 8px 2px 0px rgba(80, 184, 71, 1);
+    box-shadow: 8px 8px 2px 0px rgba(80, 184, 71, 1);
+}
+
+#footer{
+
+    font-family: 'Darumadrop One', cursive;
+    padding: 30px;
+    background-color: #E0BD63;
+    border-style: solid;
+    border-width: 10px;
+    border-color: #df9f4c;
+    border-radius: 10px;
+    margin-top: 20px;
+    max-height: 100px;
+    bottom: 0px;
+    margin: 20px;
+    text-align: right;
+
+
+    -webkit-box-shadow: 8px 8px 2px 0px rgba(210, 140, 47, 1);
+    -moz-box-shadow: 8px 8px 2px 0px rgba(210, 140, 47, 1);
+    box-shadow: 8px 8px 2px 0px rgba(210, 140, 47, 1);
+
+}
+
+
+#form
+{
+    height: 200px;
+    width: auto;
+    min-height: 200px ;
+    padding: 30px;
+    display: inline-block;
+    font-family: 'Cherry Bomb One', cursive;
+    display: block;
+    font-size: 25px;
+    
+}
+
+#form:hover{
+    color: #230174;
+}
+input[type=submit]{
+    background-color: #a8ffb7;
+
+    font-family: 'Cherry Bomb One', cursive;
+    font-size: 20px;
+   
+    border-style: solid;
+    border-width: 10px;
+    border-color: #50b847;
+    border-radius: 50px;
+
+    color: rgb(0, 0, 0);
+    padding: 15px 50px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.side_photo{
+    border-style: solid;
+    border-width: 10px;
+    border-color: #50b847;
+    border-radius: 50px;
+   
+    max-width: 250px;
+}
+
+#gallery{
+ padding: 20px;
+}
+
+nav ul{
+    list-style-type: none;
+}
+nav ul li a:hover{
+    color:#c21b15;
+}
